@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Template by Ts</title>
+	<link rel="stylesheet" type="text/css" href="extratemp.css">
+	<script type="text/javascript">
+		var temp = 1;
+		function myFunction() {
+  window.open("https://drive.google.com/open?id=1sXAvhUywlEEo3Pa_W-M5VySOco43Oj8K");
+}
+		function func1() {
+			document.getElementById("home").style.opacity = "1";
+			if (temp != 1) {
+				if (temp == 2) {
+					var x = setTimeout(labartor, 750);
+					function labartor() {
+						document.getElementById("labartor").style.top ="-118%";
+					}
+					document.getElementById("labartor").style.opacity = "0";
+					var y = setTimeout(holder, 300);
+					function holder() {
+					document.getElementById("labartor").style.top = "118%";
+					document.getElementById("home").style.top = "0%";
+				}
+					var z = setTimeout(holdertwo, 1100);
+					function holdertwo() {
+						document.getElementById("home").style.transform = "scale(1)";
+					}
+					document.getElementById("labartor").style.transform = "scale(0.7)";
+					temp = 1;					
+				}
+				if (temp == 3) {
+					var x = setTimeout(contact, 750);
+					function contact() {
+						document.getElementById("contact").style.top ="-118%";
+					}
+					document.getElementById("contact").style.opacity = "0";
+					var z = setTimeout(holdertwo, 1100);
+					function holdertwo() {
+					document.getElementById("home").style.transform = "scale(1)";}
+					var y = setTimeout(holder, 300);
+					function holder() {
+					document.getElementById("home").style.top = "0%";
+					document.getElementById("contact").style.top = "118%";}
+					document.getElementById("contact").style.transform = "scale(0.7)";
+					temp = 1;
+				}
+			}
+		}
+		function func2() {
+			document.getElementById("labartor").style.opacity = "1";
+			if (temp != 2) {
+				if (temp == 1) {
+					var x = setTimeout(home, 750);
+					function home() {
+						document.getElementById("home").style.top ="-118%";
+					}
+					document.getElementById("home").style.opacity = "0";
+					document.getElementById("home").style.transform = "scale(0.7)";
+					var y = setTimeout(holder, 300);
+					function holder() {
+					document.getElementById("home").style.top = "118%";
+					document.getElementById("labartor").style.top = "0%";}
+					var z = setTimeout(holdertwo, 1100);
+					function holdertwo() {
+					document.getElementById("labartor").style.transform = "scale(1)";}
+					temp = 2;
+				}
+
+				if (temp == 3) {
+					var x = setTimeout(contact, 750);
+					function contact() {
+						document.getElementById("contact").style.top ="-118%";
+					}
+					document.getElementById("contact").style.opacity = "0";
+					var z = setTimeout(holdertwo, 1100);
+					function holdertwo() {
+					document.getElementById("labartor").style.transform = "scale(1)";}
+					var y = setTimeout(holder, 300);
+					function holder() {
+					document.getElementById("labartor").style.top = "0%";
+					document.getElementById("contact").style.top = "118%";}
+					document.getElementById("contact").style.transform = "scale(0.7)";
+					temp = 2;
+				}
+			}
+		}
+		function func3() {
+			document.getElementById("contact").style.opacity = "1";
+			if (temp != 3) {
+				if (temp == 1) {
+					var x = setTimeout(home, 750);
+					function home() {
+						document.getElementById("home").style.top ="-118%";
+					}
+					document.getElementById("home").style.opacity = "0";
+					var z = setTimeout(holdertwo, 1100);
+					function holdertwo() {
+					document.getElementById("contact").style.transform = "scale(1)";}
+					var y = setTimeout(holder, 300);
+					function holder() {
+					document.getElementById("contact").style.top = "0%";
+					document.getElementById("home").style.top = "118%";}
+					document.getElementById("home").style.transform = "scale(0.7)";
+					temp = 3;					
+				}
+				if (temp == 2) {
+					var x = setTimeout(labartor, 750);
+					function labartor() {
+						document.getElementById("labartor").style.top ="-118%";
+					}
+					document.getElementById("labartor").style.opacity = "0";
+					var z = setTimeout(holdertwo, 1100);
+					function holdertwo() {
+					document.getElementById("contact").style.transform = "scale(1)";}
+					var y = setTimeout(holder, 300);
+					function holder() {
+					document.getElementById("contact").style.top = "0%";
+					document.getElementById("labartor").style.top = "118%";}
+					document.getElementById("labartor").style.transform = "scale(0.7)";
+					temp = 3;
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+<div id="main">
+<div id="container">
+	<div id="home"><img class="pics" src="2.png">
+		<div class="pagecontainer"></div>
+		<div id="hometext">Subscribe to<br>Pewdiepie</div>
+			<p id="homepara">Our Supreme Leader Pew.D.Pie needs your help against the war with B-Series.</p>
+			</div>
+		<div id="labartor"><img class="pics" src="3.jpg"><div class="pagecontainer"></div><div id="hometext">Lab Works
+			<button class="labbutton" onclick="myFunction()">Go to Labs
+			</button></div>
+
+			</div>
+		<div id="contact"><img class="pics" src="1.png"><div class="pagecontainer"></div>
+		<div id="hometext">Check his channels<img class="ico" src="f.ico" id="fb"><p id="fbtxt">Pewdiepie-desu</p>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/Vk8UEWHYfEg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+			</div>
+</div>
+	<div id="menu">Bruh<div id="undermenu"></div>
+		<div class="buttons" id="homebtn" onclick="func1()">Home<div class="underline" id="underone"></div></div>
+		<div class="buttons" id="labbtn" onclick="func2()">Labs<div class="underline" id="undertwo"></div></div>
+		<div class="buttons" id="contbtn" onclick="func3()">9 yolds<div class="underline" id="underthree"></div></div>
+	</div>
+</div>
+</body>
+</html>
